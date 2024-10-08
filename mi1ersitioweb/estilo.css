@@ -1,0 +1,191 @@
+:root {
+  --primary: #828282;
+  --primarySecond: #a3a3a3;
+  --secundary: #ffce00;
+  --secundaryDark: rgb(233, 287, 2);
+  --white: #fff;
+  --black: #000;
+
+  --fontPrincipal: "Staatliches", cursive;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* Globales */
+
+body {
+  background-color: var(--primary);
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+p {
+  font-size: 1.8rem;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--white);
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+h1,
+h2,
+h3 {
+  text-align: center;
+  color: var(--white);
+  font-family: var(--fontPrincipal);
+}
+
+h1 {
+  font-size: 4rem;
+}
+
+h2 {
+  font-size: 3.2rem;
+}
+
+h3 {
+  font-size: 2.4rem;
+}
+
+/* Header */
+
+.header {
+  display: flex;
+  justify-content: center;
+}
+
+.header__logo {
+  margin: 1rem 0;
+  width: 80%;
+  margin-left: 10%;
+}
+
+/* Footer */
+
+.footer {
+  background-color: var(--primarySecond);
+  padding: 1rem 0;
+  margin-top: 2rem;
+}
+
+.footer__text {
+  font-family: var(--fontPrincipal);
+  text-align: center;
+  font-size: 2rem;
+}
+
+.navigation {
+  background-color: var(--primarySecond);
+  padding: 1rem 0;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  width: 100%;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.navigation__link {
+  font-family: var(--fontPrincipal);
+  color: var(--white);
+  font-size: 3rem;
+  text-align: center;
+}
+
+.navigation__link--active,
+.navigation__link:hover {
+  color: var(--white);
+}
+
+/* Grid */
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Artistas */
+
+.artista {
+  background-color: var(--primarySecond);
+  padding: 1rem;
+}
+
+.artista__name {
+  font-size: 4rem;
+}
+
+.artista__bio {
+  font-size: 2.8rem;
+  color: var(--white);
+}
+
+.artista__name,
+.artista__bio {
+  font-family: var(--fontPrincipal);
+  margin: 1rem 0;
+  text-align: center;
+  line-height: 1.2;
+}
+
+/* Graficos */
+
+.graph {
+  min-height: 30rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  grid-column: 1 / 3;
+}
+
+.graph--artist {
+  grid-row: 2 / 3;
+  background-image: url(rockolabanner2.png);
+}
+
+/* Pagina del producto */
+
+@media (min-width: 768px) {
+  .bio {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+  }
+}
+
+imagenartist {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.imagenartist img {
+  max-width: 50%;
+  height: auto;
+  margin-left: 20%;
+}
