@@ -165,7 +165,7 @@ h3 {
 
 .graph--artist {
   grid-row: 2 / 3;
-  background-image: url(rockolabanner2.png);
+  background-image: url(../assets/images/rockolabanner2.png);
 }
 
 /* Pagina del producto */
